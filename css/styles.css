@@ -1,3 +1,24 @@
-body {
+.control-group .main-block {
+	float:left;
+	width: 300px;
+}
 
+.control-group .ans-block {
+	padding-left: 320px;
+}
+
+.ans-block .right-ans{
+	float: left;
+	width: 170px;
+}
+
+.ans-block .count-point{
+	padding-left: 180px;
+}
+
+
+
+
+.clear {
+	clear: both;
 }
