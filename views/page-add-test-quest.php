@@ -1,3 +1,9 @@
+<?php
+
+ if ( $_SESSION['count']  == '' ) {
+  $_SESSION['count'] = 1;
+ }
+?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -10,8 +16,6 @@
 			      		<textarea id="quest" name="quest"></textarea>
 			    	</div>			  			
 			  	</div>
-
-
 			  	<div class="control-group">
 			  		<div class="main-block">
 				    	<label class="control-label" for="ans1">Варіант відповіді 1</label>
@@ -99,8 +103,8 @@
 
 
 				<div class="form-actions">
-				  <button type="submit" class="btn btn-primary" name="saveTest">Завершити введення тесту</button>
-				  <button type="button" class="btn" name="addQuest">Добавити запитання</button>
+				  <button type="submit" class="btn btn-primary" name="save_test" value="saveTest">Завершити введення тесту</button>
+				  <button type="submit" class="btn" name="add_quest" value="AddQuest">Добавити запитання</button>
 				</div>
 			</form>
 		</div>
