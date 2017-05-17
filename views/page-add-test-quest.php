@@ -1,6 +1,6 @@
 <?php
 
- if ( $_SESSION['count']  == '' ) {
+ if ( isset($_SESSION['count']) && ($_SESSION['count'] == '') ) {
   $_SESSION['count'] = 1;
  }
 ?>
@@ -26,7 +26,7 @@
 			  		<div class="ans-block">
 			  			<div class="right-ans">
 				  			<label class="control-label" for="right_ans">Правильна відповідь</label>
-				  			<input type="radio" id="right_ans" name="right_ans">			  				
+				  			<input type="radio" id="right_ans" name="right_ans" value="ans1">			  				
 			  			</div>
 			  			<div class="count-point">
 				  			<label class="control-label" for="bal_ans1">К-сть балів</label>
@@ -47,7 +47,7 @@
 			  		<div class="ans-block">
 			  			<div class="right-ans">
 				  			<label class="control-label" for="right_ans">Правильна відповідь</label>
-				  			<input type="radio" id="right_ans" name="right_ans">			  				
+				  			<input type="radio" id="right_ans" name="right_ans" value="ans2">			  				
 			  			</div>
 			  			<div class="count-point">
 				  			<label class="control-label" for="bal_ans2">К-сть балів</label>
@@ -68,7 +68,7 @@
 			  		<div class="ans-block">
 			  			<div class="right-ans">
 				  			<label class="control-label" for="right_ans">Правильна відповідь</label>
-				  			<input type="radio" id="right_ans" name="right_ans">			  				
+				  			<input type="radio" id="right_ans" name="right_ans" value="ans3">			  				
 			  			</div>
 			  			<div class="count-point">
 				  			<label class="control-label" for="bal_ans3">К-сть балів</label>
@@ -89,7 +89,7 @@
 			  		<div class="ans-block">
 			  			<div class="right-ans">
 				  			<label class="control-label" for="right_ans">Правильна відповідь</label>
-				  			<input type="radio" id="right_ans" name="right_ans">			  				
+				  			<input type="radio" id="right_ans" name="right_ans" value="ans4">			  				
 			  			</div>
 			  			<div class="count-point">
 				  			<label class="control-label" for="bal_ans4">К-сть балів</label>

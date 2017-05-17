@@ -1,14 +1,17 @@
 <?php
 session_start();
-require_once("header.php");
+
 ini_set("display errors", 1);
-error_reporting(E_ALL);
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
 define('ROOT', dirname(__FILE__));
 require_once(ROOT."/components/Router.php");
+require_once ROOT."/inc/db.php";
 
 $router = new Router();
 $router->run();
+
+require_once("header.php");
 
 ?>
 

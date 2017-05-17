@@ -15,9 +15,9 @@
 
 		if ( isset($_POST['test_name']) ) {
 			addTest($_POST['test_name']);
-			include("../views/page-add-test-quest.html");
+			//include("../views/page-add-test-quest.html");
 		} else {
-			include("../views/page-add-test-name.html");
+			//include("../views/page-add-test-name.html");
 		}
 
 ?>

@@ -22,7 +22,7 @@ class Router {
 	public function run() {
 
 		$url = $this->getURL();
-
+		
 		foreach ($this->routers as $patern => $path) {
 			if ( preg_match("`$patern`", $url) ) {
 				
